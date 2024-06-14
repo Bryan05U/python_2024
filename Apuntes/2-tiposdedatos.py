@@ -50,3 +50,4 @@ print(estilos)
 print(type(estilos))
 print(estilos[2])
 print(estilos.index("Indie"))
+
