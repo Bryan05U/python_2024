@@ -13,10 +13,10 @@ Por último imprimir si ese índice, está dentro de que categoria:
 ● Peligrosa: (ICA superior a 300)
 """
 
-print(f"######## LISTA DE CIUDADES #######")
+print(f"######## LISTA DE CIUDADES ########")
 ciudades = list(["Santiago", "Temuco", "Osorno", "Punta Arenas"])
 print(ciudades)
-print(f"######## LISTA DE ICA #######")
+print(f"######## LISTA DE ICA ########")
 ica = [134, 99, 245, 50]
 print(ica)
 
