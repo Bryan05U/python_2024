@@ -1,14 +1,43 @@
-"""
-4. Desarrollar un algoritmo que permita devolver la siguiente propiedad descubierta por
-Nicómaco de Gerasa:
-Sumando el primer impar, se obtiene el primer cubo.
-Sumando los dos siguientes impares, se obtiene el segundo cubo
-Sumando los tres siguientes, se obtiene el tercer cubo, y así sucesivamente.
-Ejemplo:
-1^3 = 1 = 1
-2^3 = 3 + 5 = 8
-3^3 = 7 + 9 + 11 = 27
-4^3 = 13 + 15 + 17 + 19 = 64
-Imprimir por pantalla, los primeros n cubos, considerando el valor de n obtenido desde
-teclado.
-"""
+n = int(input("Ingrese un número: "))
+impar = (n*(n-1)) + 1
+acum = 0
+for i in range(n):
+    acum = acum + impar
+    if 1 == (n-1):
+       break
+    impar = impar + 2
+    print(impar)
+print(f"El cubo de {n} es: {acum}")
+
+n = int(input("Ingrese otro número: "))
+impar = (n*(n-1)) + 1
+acum = 0
+for i in range(n):
+    acum = acum + impar
+    if 1 == (n-1):
+       break
+    impar = impar + 2
+    print(impar)
+print(f"El cubo de {n} es: {acum}")
+
+n = int(input("Ingrese otro número más: "))
+impar = (n*(n-1)) + 1
+acum = 0
+for i in range(n):
+    acum = acum + impar
+    if 1 == (n-1):
+       break
+    impar = impar + 2
+    print(impar)
+print(f"El cubo de {n} es: {acum}")
+
+n = int(input("Ingrese otro y último número: "))
+impar = (n*(n-1)) + 1
+acum = 0
+for i in range(n):
+    acum = acum + impar
+    if 1 == (n-1):
+       break
+    impar = impar + 2
+    print(impar)
+print(f"El cubo de {n} es: {acum}")

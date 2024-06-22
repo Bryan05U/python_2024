@@ -5,3 +5,12 @@ la cantidad de ocurrencias de ese número buscado. (Se permite el uso de la Bibl
 Random)
 """
 
+intervalo = True
+
+while intervalo:
+    n = int(input("Número entero entre el 40 y el 350: "))
+    if n in range(40,350):
+        print("Dentro del rango")
+    else:
+        print("Fuera del rango")
+        intervalo = False
