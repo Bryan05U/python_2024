@@ -5,6 +5,7 @@ print(f"Zona Sur: {zona_sur}")
 zona_austral = (2200, 2500, 1000, 2200, 3623, 990)
 print(f"Zona Austral: {zona_austral}")
 
+# A) Imprimir los valores duplicados de cada tupla.
 zonas = ["Central", "Sur", "Austral"]
 for i in range(len(zonas)):
     zona = zonas[i]
@@ -15,6 +16,7 @@ for i in range(len(zonas)):
     elif zona == "Austral":
         alturas = zona_austral
 
+# B) Verificar si la altura 8848m se encuentra en las tres tuplas utilizando bucles y condicionales.
     duplicados = []
     for altura in alturas:
         if alturas.count(altura) > 1 and altura not in duplicados:
@@ -25,8 +27,10 @@ for i in range(len(zonas)):
 datos = 8848 in zona_central and 8848 in zona_sur and 8848 in zona_austral
 print(f"¿8848m está en las tres zonas?: {datos}")
 
+# C) Unir las tuplas en una sola y eliminar los duplicados.
 nuevatupla = tuple(set(zona_central + zona_sur + zona_austral))
 print(f"Tupla sin duplicados: {nuevatupla}")
 
+# D) Transformar la tupla obtenida en una lista. Imprimir la nueva lista obtenida.
 nuevalista = list(nuevatupla)
 print(f"Lista de alturas: {nuevalista}")
